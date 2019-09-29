@@ -1,0 +1,33 @@
+.contenedor{
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    line-height: 75px;
+    margin-top: 15%;
+}
+  
+.titulo{
+    text-align: center;
+}
+
+.textbox{
+    margin-bottom: 1px;
+}
+
+.iconSmall {
+    font-size: 1px;
+}
+
+.botones{
+    text-align: center;
+}
+
+.iconoPersonal{
+    padding-left: 10px;
+}
+
+@media (max-width: 725px) {
+    .iconoPersonal{
+        visibility: hidden;
+    }
+}
+
