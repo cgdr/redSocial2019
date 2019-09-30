@@ -1,8 +1,14 @@
 .contenedor{
     width: calc(100% - 100px);
-    height: calc(100% - 100px);
+    height: calc(100% - 600px);
     line-height: 75px;
-    margin-top: 15%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.contenedorImg{
+    Width: 100%;
+    height: 50%;
 }
 
 .imgLogin{
@@ -10,8 +16,23 @@
     height: 80%;
 }
 
-@media (max-width: 725px) {
+@media (max-width: 768px) {
     .imgLogin{
         display: none;
     }
+    .botones{
+        text-align: center;
+        font-size: 0.5em;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.botones{
+    text-align: center;
+    font-size: 2em;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
