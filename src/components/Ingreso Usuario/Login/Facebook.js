@@ -15,7 +15,7 @@ export default class Facebook extends Component{
 
     responseFacebook = response => {
         console.log(response);
-        this.setState = ({
+          this.setState = ({
             isLoggedIn: true,
             userID: response.userID,
             name: response.name,
@@ -24,14 +24,14 @@ export default class Facebook extends Component{
         });
         console.log(this.state);
     }
+
     render () {
 
         let fbContent;
-        {console.log(this.state.isLoggedIn);}
         if(this.state.isLoggedIn){
             fbContent = (
                 <div>hola</div>
-            )
+            );
         }else{
             fbContent = (
             <FacebookLogin
