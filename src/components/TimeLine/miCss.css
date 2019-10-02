@@ -1,0 +1,16 @@
+.menuButton{
+    
+}
+
+.title {
+    flex-grow: 1;
+}
+
+.root{
+    flex-grow: 1;
+}
+
+.barra{
+    margin-left: 20%;
+    margin-right: 20%;
+}

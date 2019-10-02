@@ -3,12 +3,14 @@ import {Grid, Col, Row} from 'react-flexbox-grid';
 import FormLabel from '@material-ui/core/FormLabel';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
+import Helmet from 'react-helmet';
 //Iconos
 import imgRedSocial from './../../imagenes/rs.jpg';
 //Componentes
 import Login from './Login';
-import './style.css';
 import Registrar from './Registrar/index';
+
+import './style.css';
 
 class InicioUsuario extends Component {
 
@@ -42,6 +44,9 @@ class InicioUsuario extends Component {
                                         <FormLabel>
                                             <h1 className="titulo">Red Social</h1>
                                         </FormLabel>
+                                        <Helmet>
+                                            <style>{'body { background-color: #F43F42; }'}</style>
+                                        </Helmet>
                                     </Col>
                                 </Row>
                                 <Row>
@@ -52,7 +57,7 @@ class InicioUsuario extends Component {
                                         <Row>
                                             <Col xs={6} md={6} lg={6}>
                                                 <Button variant="contained"
-                                                color={inicioSesion=="IS"?"secondary":"default"} 
+                                                color={inicioSesion==="IS"?"secondary":"default"} 
                                                 size="small" 
                                                 fullWidth 
                                                 className="botones"
@@ -64,7 +69,7 @@ class InicioUsuario extends Component {
                                             </Col>
                                             <Col xs={6} md={6} lg={6}>
                                                 <Button variant="contained"
-                                                color={inicioSesion=="IS"?"default":"secondary"}  
+                                                color={inicioSesion==="IS"?"default":"secondary"}  
                                                 size="small" 
                                                 fullWidth 
                                                 className="botones"
@@ -75,7 +80,7 @@ class InicioUsuario extends Component {
                                                 </Button>
                                             </Col>
                                         </Row>                                        
-                                        {inicioSesion=="IS" ? <Login></Login> : <Registrar></Registrar>}
+                                        {inicioSesion==="IS" ? <Login></Login> : <Registrar></Registrar>}
                                     </Col>
                                 </Row>
                             </Grid>
